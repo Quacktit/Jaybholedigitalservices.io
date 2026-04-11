@@ -171,8 +171,23 @@ img { max-width: 100%; }
 
 .services-detail {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 20px;
+    /* This forces exactly 3 columns on desktop */
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 30px; /* Space between the cards */
+    padding: 2rem 0;
+}
+
+/* Responsiveness: Adjust for smaller screens */
+@media (max-width: 1024px) {
+    .services-detail {
+        grid-template-columns: repeat(2, 1fr); /* 2 cards per row on tablets */
+    }
+}
+
+@media (max-width: 768px) {
+    .services-detail {
+        grid-template-columns: 1fr; /* 1 card per row on mobile */
+    }
 }
 
 
