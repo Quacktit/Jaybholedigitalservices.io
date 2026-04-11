@@ -254,6 +254,62 @@ img { max-width: 100%; }
 .back-to-top.show { display: flex; }
 .back-to-top:hover { background: var(--accent); color: var(--dark); border-color: var(--accent); }
 
+/* ---- Back to Top Center ---- */
+.back-to-top-center {
+    position: fixed;
+    bottom: 30px; /* Distance from bottom */
+    left: 50%;
+    transform: translateX(-50%) translateY(100px); /* Hidden by default */
+    
+    background: var(--card-bg);
+    color: var(--white);
+    border: 1px solid var(--border);
+    padding: 12px 24px;
+    border-radius: 50px; /* Pill shape */
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 600;
+    font-size: 0.9rem;
+    cursor: pointer;
+    z-index: 999;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    box-shadow: var(--shadow);
+    opacity: 0;
+}
+
+/* Make the arrow bold/accented */
+.back-to-top-center span {
+    color: var(--accent);
+    font-size: 1.2rem;
+}
+
+/* Show class (Triggered by main.js) */
+.back-to-top-center.show {
+    transform: translateX(-50%) translateY(0);
+    opacity: 1;
+}
+
+.back-to-top-center:hover {
+    background: var(--accent);
+    color: var(--dark);
+    border-color: var(--accent);
+}
+
+.back-to-top-center:hover span {
+    color: var(--dark);
+}
+
+/* Mobile Adjustment: Move it up slightly if it overlaps floating buttons */
+@media (max-width: 768px) {
+    .back-to-top-center {
+        bottom: 20px;
+        padding: 10px 20px;
+    }
+}
+
+
 /* ---- PAGE HERO (inner pages) ---- */
 .page-hero {
   padding: 7rem 3rem 4rem; text-align: center;
