@@ -1,5 +1,5 @@
 // =============================================
-// NEXACORE — Main JavaScript
+// Jay Bhole Digital Services — Main JavaScript
 // =============================================
 
 // Navbar scroll effect
@@ -100,4 +100,11 @@ document.querySelectorAll('.card, .testi-card, .blog-card, .team-card, .pricing-
   el.style.transform = 'translateY(30px)';
   el.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
   observer.observe(el);
+});
+
+
+// Back to top
+window.addEventListener('scroll', () => {
+  const backTop = document.getElementById('backTop');
+  if (backTop) backTop.classList.toggle('show', window.scrollY > 400);
 });
