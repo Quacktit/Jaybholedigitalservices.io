@@ -363,8 +363,8 @@ img { max-width: 100%; }
 /* ---- Instagram Float---- */
 .float-insta{
   position: fixed;
-  width: 58px; 
-  height: 58px;
+  width: 54px; 
+  height: 54px;
   /* Increase bottom to 6.5rem so it sits above the 2rem WhatsApp button */
   bottom: 6.5rem; 
   right: 2rem; 
