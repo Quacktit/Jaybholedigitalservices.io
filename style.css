@@ -172,7 +172,7 @@ img { max-width: 100%; }
 /* ---- WHY US ---- */
 /* Styling for the NexaCore-style bolding in text */
 .why-point p strong {
-    font-weight: 700;
+    font-weight: 800;
     color: var(--white); /* Keeps the first part white/bold */
     font-size: 1.1rem;   /* Makes it stand out slightly */
 }
