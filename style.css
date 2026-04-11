@@ -170,20 +170,23 @@ img { max-width: 100%; }
 .card a:hover { text-decoration: underline; }
 
 /* ---- WHY US ---- */
-.why-us { display: flex; gap: 5rem; align-items: center; background: var(--dark2); }
-.why-content { flex: 1; }
-.why-content p { color: var(--muted); margin-bottom: 1.5rem; }
-.why-list { list-style: none; display: flex; flex-direction: column; gap: 0.7rem; margin-bottom: 2rem; }
-.why-list li { color: var(--text); font-size: 0.95rem; }
-.why-image { flex: 1; display: flex; justify-content: center; }
-.why-blob {
-  display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;
-  background: linear-gradient(135deg, rgba(192,132,252,0.1), rgba(232,201,126,0.1));
-  border: 1px solid var(--border); border-radius: 2rem; padding: 2rem;
+/* Styling for the NexaCore-style bolding in text */
+.why-point p strong {
+    font-weight: 700;
+    color: var(--white); /* Keeps the first part white/bold */
+    font-size: 1.1rem;   /* Makes it stand out slightly */
 }
-.why-stat { text-align: center; padding: 1.2rem; background: var(--card-bg); border-radius: 12px; }
-.why-stat strong { display: block; font-size: 2rem; font-family: 'Playfair Display', serif; color: var(--accent); }
-.why-stat span { font-size: 0.8rem; color: var(--muted); }
+
+.why-point p span {
+    color: var(--accent); /* This is your gold/green NexaCore color */
+    font-weight: 700;
+    text-transform: capitalize; /* Optional: ensures it looks neat */
+}
+
+/* Adds some spacing between the points */
+.why-point {
+    margin-bottom: 1.5rem;
+}
 
 
 
