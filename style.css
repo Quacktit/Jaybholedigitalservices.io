@@ -169,6 +169,13 @@ img { max-width: 100%; }
 .card a { color: var(--accent); font-size: 0.85rem; font-weight: 600; }
 .card a:hover { text-decoration: underline; }
 
+.services-detail {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+
 /* ---- WHY US ---- */
 /* Styling for the NexaCore-style bolding in text */
 .why-point p strong {
